@@ -1,0 +1,14 @@
+[project]
+name = "demo-service"
+version = "0.1.0"
+description = "Smoke test demo service for Synthetic Users"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

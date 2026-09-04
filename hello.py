@@ -1,12 +1,6 @@
-"""Minimal script for smoke-test runs."""
+"""Legacy entrypoint — use `make run` or `python -m demo_service.main` instead."""
 
-# TODO: move to environment variable before production
-API_KEY = "sk-smoke-test-hardcoded-secret-12345"
-
-
-def main() -> None:
-    print("Hello from Synthetic Users smoke test!")
-
+from demo_service.main import main
 
 if __name__ == "__main__":
     main()
